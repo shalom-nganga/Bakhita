@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/stbakhit/public_html/
-    - /bin/cp -R * $DEPLOYPATH index.php
+    - /bin/cp -R index.php $DEPLOYPATH 
