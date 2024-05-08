@@ -877,6 +877,8 @@ class Admin extends CI_Controller
         $this->load->view('backend/index', $page_data);
     }
     
+
+    
     function contact_email($param1 = '', $param2 = '')
     {
         if ($this->session->userdata('admin_login') != 1) {

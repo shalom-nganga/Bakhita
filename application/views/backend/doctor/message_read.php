@@ -4,7 +4,7 @@ foreach ($messages as $row):
 
     $sender = explode('-', $row['sender']);
     $sender_account_type = $sender[0];
-    $sender_id = $sender[1];
+    $sender_id = $sender[2];
     ?>
     <div class="mail-info">
 

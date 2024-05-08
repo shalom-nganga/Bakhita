@@ -4,11 +4,7 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 /*     
- *     @author : Creativeitem
- *     30th July, 2014
- *     Creative Item
- *     www.creativeitem.com
- *     http://codecanyon.net/user/creativeitem
+
  */
 
 class Login extends CI_Controller

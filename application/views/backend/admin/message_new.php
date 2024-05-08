@@ -12,27 +12,7 @@
             'class' => 'form-groups form-horizontal', 'enctype' => 'multipart/form-data')); ?>
 
 
-    <div class="form-group">
-        <label for="subject"><?php echo get_phrase('recipient'); ?>:</label>
-        <br><br>
-        <select class="form-control select2" name="reciever" required>
-
-            <option value=""><?php echo get_phrase('select_a_user'); ?></option>
-            <optgroup label="<?php echo get_phrase('patient'); ?>">
-                <?php
-                $appointments = $this->crud_model->select_patient_info_by_doctor_id();
-                foreach($appointments as $appointment) {
-                    $patient_info = $this->db->get_where('patient', array('patient_id' => $appointment['patient_id']))->result_array();
-
-                    foreach ($patient_info as $row) { ?>
-
-                        <option value="patient-<?php echo $row['patient_id']; ?>">
-                            - <?php echo $row['name']; ?></option>
-
-                <?php } } ?>
-            </optgroup>
-        </select>
-    </div>
+    
 
     <div class="compose-message-editor">
         <textarea rows="5" class="form-control wysihtml5" data-stylesheet-url="<?php echo base_url('assets/css/wysihtml5-color.css');?>"
